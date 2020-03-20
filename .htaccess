@@ -1,0 +1,8 @@
+#<Files "*">
+#  Require all denied
+#</Files>
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.+) index.php/$1
